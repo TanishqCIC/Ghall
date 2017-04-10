@@ -123,3 +123,77 @@
   <span class="glyphicon glyphicon-chevron-right" style="color:white;"></span>
     
   </button>
+      
+    </div>
+    <div class="collapse navbar-collapse" id="navMain">
+      <ul class="nav navbar-nav pull-right">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="admin.php">Administration</a></li>
+        <li><a href="admission.php">Admission</a></li>
+        <li><a href="facilities.php">Facilities</a></li>
+        <li><a href="alumni.php">Alumni</a></li>
+        <li><a href="#">Residency</a></li> 
+        <li><a href="#">Contact Us</a></li> 
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+  <div class="slider">
+    <img class="sliders" src= "<?php echo $src_1 ?>">
+    <img class="sliders" src= "<?php echo $src_2 ?>">
+    <img class="sliders" src= "<?php echo $src_3 ?>">
+    <img class="sliders" src= "<?php echo $src_4 ?>">
+  </div>
+
+  <div class="carousel-caption">    
+    <h2><span class='typewriter one'><div class="wrap">
+        <div class="type-wrap">
+           <div id="typed-strings">
+              <span>Gwyer Hall  </span>
+            </div>
+          <span id="typed" style="white-space:pre;"></span>
+        </div>
+      </div>
+     
+          
+       <div class="byline"><h4>University of Delhi</h4></div>
+            
+  </div>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("sliders");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+<script>
+   /*
+  **********************************************************
+  * OPAQUE NAVBAR SCRIPT
+  **********************************************************
+  */
+
+  // Toggle tranparent navbar when the user scrolls the page
+
+  $(window).scroll(function() {
+    if($(this).scrollTop() > 50)  /*height in pixels when the navbar becomes non opaque*/ 
+    {
+        $('.opaque-navbar').addClass('opaque');
+    } else {
+        $('.opaque-navbar').removeClass('opaque');
+    }
+});
+</script>
+</body>
+</html>

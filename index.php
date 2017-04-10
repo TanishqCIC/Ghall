@@ -56,4 +56,70 @@
 	<script type="text/javascript" src="js/main.js"></script>
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/jquery.nav.js"></script>
-  
+    <script src="js/typed.js"></script>
+	<script>
+	    $(function(){
+
+	        $("#typed").typed({
+	            // strings: ["Typed.js is a <strong>jQuery</strong> plugin.", "It <em>types</em> out sentences.", "And then deletes them.", "Try it out!"],
+	            stringsElement: $('#typed-strings'),
+	            typeSpeed: 80,
+	            backDelay: 500,
+	            loop: false,
+	            contentType: 'html', // or text
+	            // defaults to false for infinite loop
+	            loopCount: false,
+	            callback: function(){ foo(); },
+	            resetCallback: function() { newTyped(); }
+	        });
+
+	        $(".reset").click(function(){
+	            $("#typed").typed('reset');
+	        });
+
+	    });
+
+	    function newTyped(){ /* A new typed object */ }
+
+	    function foo(){ console.log("Callback"); }
+
+    </script>
+
+    <style>
+	.sliders {display:none;}
+	</style>
+
+	<style>
+		.typed-cursor{
+		    opacity: 1;
+		    -webkit-animation: blink 0.7s infinite;
+		    -moz-animation: blink 0.7s infinite;
+		    animation: blink 0.7s infinite;
+		}
+		@keyframes blink{
+		    0% { opacity:1; }
+		    50% { opacity:0; }
+		    100% { opacity:1; }
+		}
+		@-webkit-keyframes blink{
+		    0% { opacity:1; }
+		    50% { opacity:0; }
+		    100% { opacity:1; }
+		}
+		@-moz-keyframes blink{
+		    0% { opacity:1; }
+		    50% { opacity:0; }
+		    100% { opacity:1; }
+		}
+  </style>
+
+</head>
+
+<body>
+<div class="navbar navbar-fixed-top opaque-navbar">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navMain">
+  <span class="glyphicon glyphicon-chevron-right" style="color:white;"></span>
+    
+  </button>

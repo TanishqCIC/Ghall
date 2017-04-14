@@ -214,3 +214,87 @@
 
                         </form>
                     </div>
+                    <div role="tabpanel" class="tab-pane fade" id="register">
+                        <form class="form-horizontal" method="post" action="">
+                            <div class="form-group ">
+                                <div class="input-group">
+                                    <div class="input-group-addon"><i class="fa fa-user"></i></div>
+                                    <input type="text" name="username" class="form-control" placeholder="Username" required="required" value="">
+                                </div>
+                            </div>
+                            <div class="form-group ">
+                                <div class="input-group">
+                                    <div class="input-group-addon"><i class="fa fa-phone"></i></div>
+                                    <input type="text" name="mobile" class="form-control" placeholder="Mobile No." required="required" value="">
+                                </div>
+                            </div>
+                            <div class="form-group ">
+                                <div class="input-group">
+                                    <div class="input-group-addon"><i class="fa fa-envelope"></i></div>
+                                    <input type="email" name="email" class="form-control" placeholder="Email" required="required" value="">
+                                </div>
+                            </div>
+                            <div class="form-group ">
+                                <div class="input-group">
+                                    <div class="input-group-addon"><i class="fa fa-lock"></i></div>
+                                    <input type="password" name="password" class="form-control" placeholder="Password" required="required">
+                                </div>
+                            </div>
+                            <div class="form-group ">
+                                <div class="input-group">
+                                    <div class="input-group-addon"><i class="fa fa-lock"></i></div>
+                                    <input type="password" name="cpassword" class="form-control" placeholder="Confirm Password" required="required">
+                                </div>
+                            </div>
+                            <input type="submit" value="Register" class="btn btn-success btn-custom">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<div class="navbar navbar-fixed-bottom opaque-navbar">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navMain">
+  <span class="glyphicon glyphicon-chevron-right" style="color:white;"></span>
+    
+  </button>
+      
+    </div>
+    <div class="collapse navbar-collapse" id="navMain" style="text-align: center">
+    
+      Designed and developed by <span style="color:yellow">Tanishq Kumar Dhangar</span>
+   <p>Copyright 2017</p>
+    </div>
+  </div>
+</div>
+<script>
+   /*
+  **********************************************************
+  * OPAQUE NAVBAR SCRIPT
+  **********************************************************
+  */
+
+  // Toggle tranparent navbar when the user scrolls the page
+
+  $(window).scroll(function() {
+    if($(this).scrollTop() > 50)  /*height in pixels when the navbar becomes non opaque*/ 
+    {
+        $('.opaque-navbar').addClass('opaque');
+    } else {
+        $('.opaque-navbar').removeClass('opaque');
+    }
+});
+</script>
+
+</body>
+
+</html>

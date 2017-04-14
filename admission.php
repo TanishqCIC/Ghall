@@ -95,3 +95,122 @@
 
 													mysqli_query($con, $query_1);
 													?>
+												
+													<?php
+													echo "Proceed using Login button !";
+													?>
+												
+													<?php
+													
+													}
+													
+
+												
+												
+											}
+											else{
+												echo "Connection fail";
+											}
+
+
+							}
+							}
+							
+							}
+								?>
+
+								<?php
+									if (isset ($_POST['lemail']) && !empty($_POST['lpassword'])) {
+										if(isset ($_POST['lpassword']) && !empty($_POST['lemail'])) {
+											$b=$_POST['lemail'];
+											$c=$_POST['lpassword'];
+
+													$host = '127.0.0.1';
+													$user = 'root';
+													$pss = '';
+													$err = 'Cannot connect';
+													$err1 = 'Cannot connect to database';
+													$db = 'ghall';
+													$query = "SELECT * FROM users";
+													$con = @mysqli_connect($host, $user, $pss, $db) or die($err); 
+
+														$z=0;
+														if($query_run = mysqli_query($con, $query)){
+															while ($que_row = mysqli_fetch_assoc($query_run)) {
+																$f=$que_row['uname'];
+																$g=$que_row['pass'];
+																$h=$que_row['email'];
+																$i=$que_row['mobile'];
+																if ($b==$h && $c==$g) {
+																	$z = 1;
+																	$hi = $f;
+																}
+																
+															}
+															if ($z==1) {
+																?>
+																<br>
+																<br>
+																<?php 
+																session_start();
+																$_SESSION['user']=$hi;
+																$_SESSION['mail']=$h;
+																$_SESSION['phone']=$i;
+																header("Location: http://localhost/gwyer/form.php");
+																exit;
+															}
+															else {
+																?>
+																<h2>
+																<?php
+																echo 'Invalid access!';
+																}
+																?>
+</h2>
+										<?php					
+															
+														}
+														else{
+															echo "Connection fail";
+														}
+													}
+										}
+
+										?>
+      <div class="row">
+        <div class="container">
+            <div class="login-register-form-section">
+                <ul class="nav nav-tabs" role="tablist">
+                	<li class="active"><a href="#instructions" data-toggle="tab">Instructions</a></li><br>
+                    <li><a href="#login" data-toggle="tab">Login</a></li>
+                    <li><a href="#register" data-toggle="tab">Register</a></li>
+
+                </ul>
+                <div class="tab-content">
+                	<div role="tabpanel" class="tab-pane fade in active" id="instructions">
+                	If you are a new applicant, please register by clicking on the "Register" button above.<br>
+                	Else, simply login using "Login" button.
+                	</div>
+                    <div role="tabpanel" class="tab-pane fade" id="login">
+                        <form class="form-horizontal" method="post" action="">
+                            <div class="form-group " >
+                                <div class="input-group">
+                                    <div class="input-group-addon"><i class="fa fa-user"></i></div>
+                                    <input type="text" name="lemail" class="form-control" placeholder="Username or email" required="required" value="">
+                                </div>
+                            </div>
+                            <div class="form-group ">
+                                <div class="input-group">
+                                    <div class="input-group-addon"><i class="fa fa-key"></i></div>
+                                    <input type="password" name="lpassword" class="form-control" placeholder="Password" required="required">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                
+                                
+                                <a href="#" class="pull-right">Forgot password?</a>
+                            </div>  
+                            <input type="submit" value="Login" class="btn btn-success btn-custom">
+
+                        </form>
+                    </div>

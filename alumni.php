@@ -106,3 +106,46 @@
             </div>
         </div>
     </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<div class="navbar navbar-fixed-bottom opaque-navbar">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navMain">
+  <span class="glyphicon glyphicon-chevron-right" style="color:white;"></span>
+    
+  </button>
+      
+    </div>
+    <div class="collapse navbar-collapse" id="navMain" style="text-align: center">
+    
+      Designed and developed by <span style="color:yellow">Tanishq Kumar Dhangar</span>
+   <p>Copyright 2017</p>
+    </div>
+  </div>
+</div>
+<script>
+   /*
+  **********************************************************
+  * OPAQUE NAVBAR SCRIPT
+  **********************************************************
+  */
+
+  // Toggle tranparent navbar when the user scrolls the page
+
+  $(window).scroll(function() {
+    if($(this).scrollTop() > 50)  /*height in pixels when the navbar becomes non opaque*/ 
+    {
+        $('.opaque-navbar').addClass('opaque');
+    } else {
+        $('.opaque-navbar').removeClass('opaque');
+    }
+});
+</script>
+</body>
+</html>

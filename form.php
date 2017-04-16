@@ -132,3 +132,107 @@ $phone = $_SESSION['phone'];
                                     </select>
                                 </div>
                             </div>
+                            <div class="form-group ">
+                                <div class="input-group">
+                                    <div class="input-group-addon"><i class="fa fa-male"></i></div>
+                                    <input type="text" name="fathername" class="form-control" placeholder="Father's name" required="required" value="">
+                                </div>
+                            </div>
+                            <div class="form-group ">
+                                <div class="input-group">
+                                    <div class="input-group-addon"><i class="fa fa-envelope"></i></div>
+                                    <input type="email" name="register_email" class="form-control" placeholder="Email" required="required" value="<?php echo $mail?>">
+                                </div>
+                            </div>
+                            <div class="form-group ">
+                                <div class="input-group">
+                                    <div class="input-group-addon"><i class="fa fa-phone"></i></div>
+                                    <input type="mobile" name="mobile" class="form-control" placeholder="Contact No. (Mobile)" required="required" value="<?php echo $phone?>">
+                                </div>
+                            </div>
+                            <div class="form-group ">
+                                <div class="input-group">
+                                    <div class="input-group-addon"><i class="fa fa-phone"></i></div>
+                                    <input type="phone" name="phone" class="form-control" placeholder="Additional Phone no.">
+                                </div>
+                            </div>
+                                                       <div class="form-group ">
+                                <div class="input-group">
+                                    <div class="input-group-addon"><i class="fa fa-user"></i></div>
+                                    <input type="text" name="name" class="form-control" placeholder="Name of Candidate" required="required" value="">
+                                </div>
+                            </div>
+                            <div class="form-group ">
+                                <div class="input-group">
+                                    <div class="input-group-addon"><i class="fa fa-male"></i></div>
+                                    <input type="text" name="fathername" class="form-control" placeholder="Father's name" required="required" value="">
+                                </div>
+                            </div>
+                            <div class="form-group ">
+                                <div class="input-group">
+                                    <div class="input-group-addon"><i class="fa fa-envelope"></i></div>
+                                    <input type="email" name="register_email" class="form-control" placeholder="Email" required="required" value="<?php echo $mail?>">
+                                </div>
+                            </div>
+                            <div class="form-group ">
+                                <div class="input-group">
+                                    <div class="input-group-addon"><i class="fa fa-phone"></i></div>
+                                    <input type="mobile" name="mobile" class="form-control" placeholder="Contact No. (Mobile)" required="required" value="<?php echo $phone?>">
+                                </div>
+                            </div>
+                            <div class="form-group ">
+                                <div class="input-group">
+                                    <div class="input-group-addon"><i class="fa fa-phone"></i></div>
+                                    <input type="phone" name="phone" class="form-control" placeholder="Additional Phone no.">
+                                </div>
+                            </div>
+                            <input type="submit" value="Submit" class="btn btn-success btn-custom">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<div class="navbar navbar-fixed-bottom opaque-navbar">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navMain">
+  <span class="glyphicon glyphicon-chevron-right" style="color:white;"></span>
+    
+  </button>
+      
+    </div>
+    <div class="collapse navbar-collapse" id="navMain" style="text-align: center">
+    
+      <p>Designed and developed by <span style="color:yellow">Tanishq Kumar Dhangar</span></p>
+   <p>Copyright 2017</p>
+    </div>
+  </div>
+</div>
+<script>
+   /*
+  **********************************************************
+  * OPAQUE NAVBAR SCRIPT
+  **********************************************************
+  */
+
+  // Toggle tranparent navbar when the user scrolls the page
+
+  $(window).scroll(function() {
+    if($(this).scrollTop() > 50)  /*height in pixels when the navbar becomes non opaque*/ 
+    {
+        $('.opaque-navbar').addClass('opaque');
+    } else {
+        $('.opaque-navbar').removeClass('opaque');
+    }
+});
+</script>
+</body>
+</html>

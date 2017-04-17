@@ -66,3 +66,80 @@
 				<p><h2>Dining Hall</h2></p>
 							<br>
 
+							<img src="images/icon_cafe.png" width="60%"></img><br><br>
+							<a>The Dining Hall provides quality</a><br>
+							<a>vegetarian and non-vegetarian food</a><br>
+							<a>for beakfast, lunch  and dinner for</a><br>
+							<a>all bona fide residents. Guests</a><br>
+							<a>and others may have meals after </a><br>
+							<a> buying coupons sold in the Dining </a><br>
+							<a>Hall.</a><br>
+				</div>
+				<div class="col-sm-4" id="ptext">
+				<p><h2>Common Room</h2></p>
+							<br>
+
+							<img src="images/icon_common.png" width="70%"><br>
+							<a>The Common Room has a TV set</a><br>
+							<a>with cable connection. Additionally,</a><br>
+							<a>the Common Room has carrom board, </a><br>
+							<a>chess set and table tennis facility.</a><br>
+							<a>In a small room outside the Common </a><br>
+							<a>Room, newspapers and magazines</a><br>
+							<a>are available for residents. </a><br>							
+				</div>
+				<div class="col-sm-4" id="ptext">
+				<p><h2>Computer/Reading Room</h2></p>
+							<br><br>
+
+							<img src="images/icon_computer_1.png" width="50%"><br><br><br>
+							<a>The Common Room has a TV set with </a><br>
+							<a> cable connection. Addily, the</a><br>
+							<a> Common Room has carrom board, chess</a><br>
+							<a> set and table tennis facility. In a </a><br>
+							<a>small room outside the Common Room, </a><br>
+							<a> newspapers and magazines </a><br>
+							<a>for residents. </a><br>						
+				</div>
+				<div class="col-sm-4" id="ptext">
+				<p><h2>Gymnasium</h2></p>
+							<br>
+
+							<img src="images/icon_gym.png" width="70%"><br>
+							<a>The Common Room has a TV set</a><br>
+							<a>with cable connection. Additionally,</a><br>
+							<a>the Common Room has carrom board, </a><br>
+							<a>chess set and table tennis facility.</a><br>
+							<a>In a small room outside the Common </a><br>
+							<a>Room, newspapers and magazines</a><br>
+							<a>are available for residents. </a><br>							
+				</div>
+				<div class="col-sm-4" id="ptext">
+				<p><h2>Laundry</h2></p>
+							<br>
+
+							<img src="images/icon_laundry.png" width="65%"><br>
+							<a>The Common Room has a TV set</a><br>
+							<a>with cable connection. Additionally,</a><br>
+							<a>the Common Room has carrom board, </a><br>
+							<a>chess set and table tennis facility.</a><br>
+							<a>In a small room outside the Common </a><br>
+							<a>Room, newspapers and magazines</a><br>
+							<a>are available for residents. </a><br>							
+				</div>
+				<div class="col-sm-4" id="ptext">
+				<p><h2>Guest Room</h2></p>
+							<br>
+
+							<img src="images/icon_guest.png" width="65%"><br>
+							<a>The Common Room has a TV set</a><br>
+							<a>with cable connection. Additionally,</a><br>
+							<a>the Common Room has carrom board, </a><br>
+							<a>chess set and table tennis facility.</a><br>
+							<a>In a small room outside the Common </a><br>
+							<a>Room, newspapers and magazines</a><br>
+							<a>are available for residents. </a><br>							
+				</div>
+				</div>
+				
+			

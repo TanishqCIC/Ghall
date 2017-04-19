@@ -157,3 +157,13 @@
   <span class="glyphicon glyphicon-chevron-right" style="color:white;"></span>
     
   </button>
+      
+    </div>
+    <div class="collapse navbar-collapse" id="navMain" style="text-align: center">
+    
+      Designed and developed by <span style="color:yellow">Tanishq Kumar Dhangar</span>
+   <p>Copyright 2017</p>
+    </div>
+  </div>
+</div>
+<script>

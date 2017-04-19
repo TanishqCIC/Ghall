@@ -143,3 +143,17 @@
 				</div>
 				
 			
+			</div>
+		</div>
+	</section><!--/#explore-->
+	<br>
+	<br>
+	<br>
+	<br>
+	<div class="navbar navbar-fixed-bottom opaque-navbar">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navMain">
+  <span class="glyphicon glyphicon-chevron-right" style="color:white;"></span>
+    
+  </button>

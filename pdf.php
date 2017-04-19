@@ -41,3 +41,17 @@ function Footer()
     $this->Cell(0,10,'Page '.$this->PageNo().'/{nb}',0,0,'C');
 }
 }
+
+// Instanciation of inherited class
+$pdf = new PDF();
+$pdf->AliasNbPages();
+$pdf->SetFillColor(11, 0, 0);
+$pdf->AddPage();
+$pdf->Image('images/icon_alumni.png',30,15,-300);
+$pdf->SetFont('Times','',12);
+$pdf->Cell(0,10,'Name : Tanishq Kumar Dhangar ',0,1);
+$pdf->Cell(0,10,"Mobile : +91-7532021921 ",0,1);
+for($i=2;$i<=40;$i++)
+    $pdf->Cell(0,10,'Printing line number '.$i,0,1);
+$pdf->Output('xyz.pdf', 'I');
+?>
